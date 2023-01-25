@@ -1,0 +1,33 @@
+// 1. Input 100 random numbers and count the odd and even numbers using for statement.
+
+using System;
+
+  class Program {
+  public static void Main (string[] args) 
+  {
+    int n; int numOdd = 0; int numEven= 0; 
+    Random rnd = new Random();
+    
+    for (n = 0; n < 100; n++)
+    
+    {
+      int number = rnd.Next();
+      
+      if (number % 2 == 0) 
+      
+      {
+        numEven++;
+      }
+      
+      else 
+      
+      {
+        numOdd++;
+      }
+      
+    }
+    
+    Console.WriteLine("Even numbers: " + numEven);
+    Console.WriteLine("Odd numbers: " + numOdd);
+  }
+}
